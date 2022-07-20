@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ics.css">
+    <script src="https://kit.fontawesome.com/f966edc190.js" crossorigin="anonymous"></script>
+    <title>Interactive Comment Section</title>
+</head>
+<body>
+    <div class="comments">
+        <div class="success">
+            <h1 class="success-msg"></h1>
+        </div>
+        <section class="comment">
+            <div class="img-nm">
+                <img src="avatars/image-amyrobson.webp" alt="">
+                <label for="name" class="name">amy robson</label>
+            </div>
+            <div class="para-comment">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quisquam eos reprehenderit sit nobis eum optio, mollitia libero doloribus nesciunt maiores
+                    reiciendis repudiandae itaque impedit veritatis ab iste eaque et. Vel ducimus
+                    , enim porro explicabo molestiae repellendus placeat in blanditiis fugit.
+                </p>
+            </div>
+            <div class="btns-reply">
+                <div class="btn-container">
+                    <button class="btn add">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <span class="count"></span>
+                    <button class="btn minus">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+                </div>
+                <div>
+                    <button class="btn reply-btn"><i class="fa-solid fa-reply"></i>    Reply</button>
+                </div>
+            </div>
+            <div class="replies">
+            
+            </div>
+        </section>
+        <section class="comment">
+            <div class="img-nm">
+                <img src="avatars/image-maxblagun.webp" alt="">
+                <label for="name" class="name">maxblagun</label>
+            </div>
+            <div class="para-comment">
+                <p>
+                    As a teacher, I like to focus a lot on [This student]. When he is confident about the answer, he loves participating in class. He is usually quite cheerful in class. He loves when he can use new words he learned in class. As long as he is not shy to practice speaking English, his speaking skills will continue to grow and improve as an English student. The stories we read are a nice challenge for his reading skill. 
+                </p>
+            </div>
+            <div class="btns-reply">
+                <div class="btn-container">
+                    <button class="btn add">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <span class="count"></span>
+                    <button class="btn minus">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+                </div>
+                <div>
+                    <button class="btn reply-btn"><i class="fa-solid fa-reply"></i>    Reply</button>
+                </div>
+            </div>
+            <div class="replies">
+            
+            </div>
+        </section>
+        
+    </div>
+    <div class="form">
+        <form class="comment-form">
+            <textarea name="comment" id="my-comment" cols="30" rows="8" placeholder="Add a comment..."></textarea>
+            <div class="img-btn">
+                <img src="avatars/image-juliusomo.webp" alt="profile">
+                <button class="btn submit-btn" >SEND</button>
+            </div>
+        </form>
+    </div>
+    <dialog class="modal" id="modal">
+        <form class="comment-form">
+            <textarea name="comment" id="my-comment" cols="30" rows="8" placeholder="Add a comment..."></textarea>
+            <div class="img-btn">
+                <img src="avatars/image-juliusomo.webp" alt="profile">
+                <button class="btn submit-btn" >REPLY</button>
+            </div>
+        </form>
+    </dialog>
+    <script src="main.js"></script>
+</body>
+</html>
